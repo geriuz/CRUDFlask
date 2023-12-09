@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="app.js"></script>
+    <title>CRUD de Contraseñas danobis</title>
+</head>
+<body>
+
+<div id="main">
+    <div id="marco" class="tarjeta">
+        <h2>CRUD de Contraseñas</h2>
+
+        <!-- Formulario para Crear -->
+        <form id="formularioCrear">
+            <label for="plataforma">Plataforma:</label>
+            <input type="text" id="plataforma" name="plataforma" required>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" required>
+
+            <button type="button" onclick="crearRegistro()">Crear</button>
+        </form>
+
+        <hr>
+
+        <!-- Formulario para Leer -->
+        <label for="consultaCodigo">Consultar por ID:</label>
+        <input type="text" id="consultaCodigo" name="consultaCodigo" required>
+        <button type="button" onclick="consultarRegistro()">Consultar</button>
+
+        <hr>
+
+        <!-- Formulario para Actualizar -->
+        <label for="actualizarCodigo">Actualizar ID:</label>
+        <input type="text" id="actualizarCodigo" name="actualizarCodigo" required>
+
+        <label for="nuevaPlataforma">Nueva Plataforma:</label>
+        <input type="text" id="nuevaPlataforma" name="nuevaPlataforma" required>
+
+        <label for="nuevoUsuario">Nuevo Usuario:</label>
+        <input type="text" id="nuevoUsuario" name="nuevoUsuario" required>
+        <br>
+        <br>
+        <label for="nuevaClave">Nueva Contraseña:</label>
+        <input type="password" id="nuevaClave" name="nuevaClave" required>
+
+        <button type="button" onclick="actualizarRegistro()">Actualizar</button>
+
+        <hr>
+
+        <!-- Formulario para Eliminar -->
+        <label for="eliminarCodigo">Eliminar por ID:</label>
+        <input type="text" id="eliminarCodigo" name="eliminarCodigo" required>
+        <button type="button" onclick="eliminarRegistro()">Eliminar</button>
+    </div>
+</div>
+
+</body>
+</html>
